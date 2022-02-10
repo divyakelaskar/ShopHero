@@ -1,9 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">Hello World</div>
+    <Router>
+      
+      <main>
+        <Switch>
+          <Route exact path="/" component={HomeScreen}/>
+          <Route  exact path="/product/:id" component={ProductScreen}/>
+          <Route  exact path="/cart" component={CartScreen}/>
+        </Switch>
+      </main>
+      
+    </Router>
   )
 }
 
