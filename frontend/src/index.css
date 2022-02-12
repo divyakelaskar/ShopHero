@@ -8,5 +8,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #d4d4d4;
+  background: #f3f3f3;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
 }
