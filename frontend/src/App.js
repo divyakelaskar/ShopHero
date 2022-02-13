@@ -20,7 +20,7 @@ function App() {
     <Router>
       <Navbar click={() => setSideToggle(true)} />
       <SideDrawer show={sideToggle} />
-      <Backdrop show={sideToggle} />
+      <Backdrop show={sideToggle} click={() => setSideToggle(false)}/>
       <main>
         <Routes>
           <Route exact path="/" component={HomeScreen} />
