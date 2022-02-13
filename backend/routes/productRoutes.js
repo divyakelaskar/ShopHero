@@ -3,7 +3,13 @@ const router = express.Router();
 const {
   getProducts,
   getProductById,
-} = require("../controller/productControllers");
+} = require("../controller/productController");
+
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 //@desc   GET all products from db
 //@route  GET api/products

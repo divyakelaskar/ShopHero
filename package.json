@@ -1,7 +1,8 @@
 {
   "name": "shophero",
   "version": "1.0.0",
-  "description": "",
+  "proxy": "http://localhost:5000",
+  "private": true,
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/divyakelaskar/ShopHero#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "mongoose": "^6.2.0"

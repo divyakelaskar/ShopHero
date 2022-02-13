@@ -15,7 +15,7 @@ const Navbar = ({click}) => {
         <ul className="navbar__links">
             <li>
                 <Link to="/cart" className='cart__link'>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i className="fa-solid fa-cart-shopping"></i>
                   <span>Cart
                     <span className='cartlogo__badge'>0</span>
                   </span>               

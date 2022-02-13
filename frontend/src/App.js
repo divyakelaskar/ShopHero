@@ -24,8 +24,8 @@ function App() {
       <main>
         <Routes>
           <Route exact path="/"  element={<HomeScreen />} />
-          <Route  exact path="/product/:id"  element={<ProductScreen />} />
-          <Route  exact path="/cart"  element={<CartScreen />} />
+          <Route path="/product/:id"  element={<ProductScreen />} />
+          <Route path="/cart"  element={<CartScreen />} />
         </Routes>
       </main>
       
