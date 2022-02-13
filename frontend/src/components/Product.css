@@ -25,10 +25,12 @@
   
   .info__price {
     font-weight: bold;
+    font-weight: 900;
   }
   
   .info__name {
     font-size: 1rem;
+    font-weight: 500;
     overflow: hidden;
   }
   
@@ -40,11 +42,11 @@
     display: block;
     text-decoration: none;
     text-align: center;
-    color: #171717;
+    color: #fff;
     width: 100%;
     padding: 8px 16px;
     border-radius: 8px;
-    background-color: #ade2f1;
+    background-color: #333;
     font-size: 1rem;
   }
   
