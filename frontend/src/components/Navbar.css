@@ -92,9 +92,3 @@
       display: flex;
     }
   }
-  
-  @media (max-width: 500px) {
-    .navbar__title h2 {
-      font-size: 1rem;
-    }
-  }
