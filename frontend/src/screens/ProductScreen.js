@@ -1,13 +1,15 @@
 import "./ProductScreen.css";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+
 
 // Actions
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
 
-const ProductScreen = ({ history }) => {
+
+const ProductScreen = () => {
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
 
@@ -22,9 +24,11 @@ const ProductScreen = ({ history }) => {
     }
   }, [dispatch, id, product]);
 
+  const navigate = useNavigate();
+
   const addToCartHandler = () => {
     dispatch(addToCart(product._id, qty));
-    history.push('/cart');
+    navigate("/cart");
   };
 
   return (
