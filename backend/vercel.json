@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "framework" : "node",
     "name": "shophero-backend",
     "builds": [
       { "src": "*.js", "use": "@vercel/node" }
